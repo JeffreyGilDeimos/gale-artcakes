@@ -24,3 +24,48 @@
          padding-top: 179px;
      }
  }
+ @media(max-width: 396px) {
+    #hero{
+         padding-top: 243px;
+     }
+ }
+
+ /* <!-- ---- Featured Selection ---- --> */
+ .selection-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 3px solid #ff0000;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .selection-img:hover {
+    border-color:chartreuse;  
+ }
+ .selection-img:hover img {
+    transform: scale(1.2);
+ }
+ .selection-img img {
+    height: 140px;
+    width: 110px;    
+ }
+ .selection-img img,
+ .selection-img {
+    transition: all 0.4s ease;
+ }
+ .selection-text {
+    opacity: 0;
+ }
+ .selection-item:hover .selection-text {
+    opacity: 1;
+ }
+ 
+ /* <!-- ---- FB Feedback ---- --> */
+ .card-body:hover {
+    transform: scale(1.2);
+ }
+ .card-body {
+    height: 125px;
+    transition: all 0.4s ease;
+ }
+ 
