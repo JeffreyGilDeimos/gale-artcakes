@@ -1,0 +1,26 @@
+:root{  
+    --red: #ff0000;
+    --white: #ffffff;
+}
+
+.bgred {
+    background-color: var(--red);
+}
+.bgwhite {
+    background-color: var(--white);
+}
+.nav-item a {
+    color: white;
+    
+    font-weight:500;
+} 
+@media(min-width: 992px) {
+   #hero{
+        padding-top: 106px;
+    }
+}
+@media(max-width: 991px) {
+    #hero{
+         padding-top: 179px;
+     }
+ }
