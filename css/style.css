@@ -15,17 +15,22 @@
     font-weight:500;
 } 
 @media(min-width: 992px) {
-   #hero{
+   #hero,
+   #selection {
         padding-top: 106px;
     }
 }
 @media(max-width: 991px) {
-    #hero{
+    #hero,
+    #selection {
+
+     
          padding-top: 179px;
      }
  }
  @media(max-width: 396px) {
-    #hero{
+    #hero,
+    #selection {
          padding-top: 243px;
      }
  }
@@ -39,9 +44,20 @@
     margin-left: auto;
     margin-right: auto;
  }
+ .selected-img {
+   height: 150px;
+   width: 150px;
+   border-radius: 90px;
+   border: 3px solid #ff0000;
+   margin-left: auto;
+   margin-right: auto;
+}
  .selection-img:hover {
     border-color:chartreuse;  
  }
+ .selected-img {
+   border-color:chartreuse;  
+}
  .selection-img:hover img {
     transform: scale(1.2);
  }
@@ -49,6 +65,10 @@
     height: 140px;
     width: 110px;    
  }
+ .selected-img img {
+   height: 150px;
+   width: 120px;    
+}
  .selection-img img,
  .selection-img {
     transition: all 0.4s ease;
@@ -68,3 +88,23 @@
     transition: all 0.4s ease;
  }
  
+ /* ----- Selected Selection-----  */
+ .card-img {
+   width: 250px;
+ }
+ .card-img {
+   border-radius: 10px;
+   border: 5px solid #ff0000;
+ }
+ .card-img:hover {
+   cursor: pointer;
+   border:5px solid chartreuse ;
+ }
+ .card-img:hover img {
+   transform: scale(1.1);
+   transition: all 0.4s ease;
+ }
+ /* ----- Modals ----- */
+ .modal-img img {
+  height: 350px;
+ }

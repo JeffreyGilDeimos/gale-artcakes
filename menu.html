@@ -43,7 +43,7 @@
               class="nav col-12 col-lg-auto my-2 justify-content-center my-lg-1 text-small fw-bold"
             >
               <li>
-                <a href="#" class="nav-link text-white-50">
+                <a href="index.html" class="nav-link text-white">
                   <i
                     class="bi bi-house-door d-block d-flex justify-content-center mb-1 fs-5"
                   ></i>
@@ -51,7 +51,7 @@
                 </a>
               </li>
               <li>
-                <a href="menu.html" class="nav-link text-white">
+                <a href="#" class="nav-link text-white-50">
                   <i
                     class="bi bi-menu-button-wide-fill d-block d-flex justify-content-center mb-1 fs-5"
                   ></i>
@@ -81,78 +81,34 @@
       </div>
     </header>
 
-    <!-- ---- Hero ---- -->
-    <section id="hero" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#hero"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#hero"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#hero"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-
-      <div class="carousel-inner d-flex">
-        <div class="carousel-item active" data-bs-interval="5000">
-          <img src="img/dripCakes.jpg" alt="Cake1" class="img-fluid w-100" />
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <img src="img/themeCakes.jpg" alt="Cake2" class="img-fluid w-100" />
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <img
-            src="img/characterCakes.jpg"
-            alt="Cake3"
-            class="img-fluid w-100"
-          />
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-slide="prev"
-          data-bs-target="#hero"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-slide="next"
-          data-bs-target="#hero"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    </section>
-
     <!-- ---- Featured Selection ---- -->
-    <section class="py-5">
+    <section id="selection">
       <div class="container">
-        <div class="text-center pb-5">
-          <h4>FEATURED SELECTIONS</h4>
+        <div class="py-3 pt-5 mb-4">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div
+              class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-danger"
+            >
+              <h4>FEATURED SELECTION</h4>
+            </div>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search product..."
+                aria-label="Search"
+              />
+            </form>
+          </div>
         </div>
         <div class="row g-0 d-flex justify-content-center">
           <div class="col-sm-6 col-md-4 col-lg-2 pb-3">
             <div class="selection-item text-center">
-              <div class="selection-img overflow-hidden">
-                <a href="menu.html"><img src="img/choco1.png" alt="Choco" /></a>
+              <div class="selected-img overflow-hidden">
+                <img src="img/choco1.png" alt="Choco" />
               </div>
-              <div class="selection-text">
-                <h5 class="pt-2">Chocolate Drip Cakes</h5>
+              <div class="selected-text">
+                <h5 class="pt-2 lead">Chocolate Drip Cakes</h5>
               </div>
             </div>
           </div>
@@ -162,7 +118,7 @@
                 <img src="img/theme1.png" alt="Choco" />
               </div>
               <div class="selection-text">
-                <h5 class="pt-2">Chocomoist Themed Cakes</h5>
+                <h5 class="pt-2 lead">Chocomoist Themed Cakes</h5>
               </div>
             </div>
           </div>
@@ -172,7 +128,7 @@
                 <img src="img/character1.png" alt="Choco" />
               </div>
               <div class="selection-text">
-                <h5 class="pt-2">Cartoon/Character Cakes</h5>
+                <h5 class="pt-2 lead">Cartoon/Character Cakes</h5>
               </div>
             </div>
           </div>
@@ -182,7 +138,7 @@
                 <img src="img/number1.png" alt="Choco" />
               </div>
               <div class="selection-text">
-                <h5 class="pt-2">Number Cakes</h5>
+                <h5 class="pt-2 lead">Number Cakes</h5>
               </div>
             </div>
           </div>
@@ -190,92 +146,148 @@
       </div>
     </section>
 
-    <!-- ---- FB Feedback ---- -->
-    <section id="feedback" class="bg-danger bg-opacity-10">
+    <!-- ---- Varities ---- -->
+    <section class="bg-danger bg-opacity-10">
       <div class="text-center py-5">
-        <h4 class="text-dark">
-          <i class="bi bi-facebook me-4 fs-2"></i>Facebook FEEDBACKS
+        <h4 class="text-danger">
+          <i class="bi bi-check-square me-2"></i>Chocolate Drip Cakes
         </h4>
       </div>
       <div class="container pb-5">
-        <div class="row g-4 justify-content-center">
-          <div class="col-sm-10 col-md-6 col-lg-4 py-1">
-            <div class="card-body">
+        <div class="row">
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 pb-4 d-flex justify-content-center"
+          >
+            <div class="card-img overflow-hidden">
               <img
-                src="img/feedback1.PNG"
-                alt="feedback 1"
+                src="img/choco1.png"
+                alt="choco 1"
+                class="img-fluid rounded shadow-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#enroll"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 pb-4 d-flex justify-content-center"
+          >
+            <div class="card-img overflow-hidden">
+              <img
+                src="img/choco2.png"
+                alt="choco 2"
                 class="img-fluid rounded shadow-lg"
               />
             </div>
           </div>
-          <div class="col-sm-10 col-md-6 col-lg-4 py-1">
-            <div class="card-body">
+
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 pb-4 d-flex justify-content-center"
+          >
+            <div class="card-img overflow-hidden">
               <img
-                src="img/feedback2.PNG"
-                alt="feedback 2"
+                src="img/choco3.png"
+                alt="choco 3"
                 class="img-fluid rounded shadow-lg"
               />
             </div>
           </div>
-          <div class="col-sm-10 col-md-6 col-lg-4 py-1">
-            <div class="card-body">
+
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 pb-4 d-flex justify-content-center"
+          >
+            <div class="card-img overflow-hidden">
               <img
-                src="img/feedback3.PNG"
-                alt="feedback 3"
+                src="img/choco4.png"
+                alt="choco 4"
                 class="img-fluid rounded shadow-lg"
               />
             </div>
           </div>
-          <div class="col-sm-10 col-md-6 col-lg-4 py-1">
-            <div class="card-body">
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 pb-4 d-flex justify-content-center"
+          >
+            <div class="card-img overflow-hidden">
               <img
-                src="img/feedback4.PNG"
-                alt="feedback 4"
+                src="img/choco5.png"
+                alt="choco 5"
                 class="img-fluid rounded shadow-lg"
               />
             </div>
           </div>
-          <div class="col-sm-10 col-md-6 col-lg-4 py-1">
-            <div class="card-body">
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 pb-4 d-flex justify-content-center"
+          >
+            <div class="card-img overflow-hidden">
               <img
-                src="img/feedback5.PNG"
-                alt="feedback 5"
+                src="img/choco6.png"
+                alt="choco 6"
                 class="img-fluid rounded shadow-lg"
               />
             </div>
           </div>
-          <div class="col-sm-10 col-md-6 col-lg-4 py-1">
-            <div class="card-body">
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 pb-4 d-flex justify-content-center"
+          >
+            <div class="card-img overflow-hidden">
               <img
-                src="img/feedback6.PNG"
-                alt="feedback 6"
+                src="img/choco1.png"
+                alt="choco 1"
                 class="img-fluid rounded shadow-lg"
               />
             </div>
           </div>
-          <div class="col-sm-10 col-md-6 col-lg-4 py-1">
-            <div class="card-body">
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 pb-4 d-flex justify-content-center"
+          >
+            <div class="card-img overflow-hidden">
               <img
-                src="img/feedback7.PNG"
-                alt="feedback 7"
+                src="img/choco1.png"
+                alt="choco 1"
                 class="img-fluid rounded shadow-lg"
               />
             </div>
           </div>
-          <div class="col-sm-10 col-md-6 col-lg-4 py-1">
-            <div class="card-body">
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 pb-4 d-flex justify-content-center"
+          >
+            <div class="card-img overflow-hidden">
               <img
-                src="img/feedback8.PNG"
-                alt="feedback 8"
+                src="img/choco1.png"
+                alt="choco 1"
                 class="img-fluid rounded shadow-lg"
               />
             </div>
           </div>
-          <div class="col-sm-10 col-md-6 col-lg-4 py-1">
-            <div class="card-body">
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 pb-4 d-flex justify-content-center"
+          >
+            <div class="card-img overflow-hidden">
               <img
-                src="img/feedback9.png"
-                alt="feedback 9"
+                src="img/choco1.png"
+                alt="choco 1"
+                class="img-fluid rounded shadow-lg"
+              />
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 pb-4 d-flex justify-content-center"
+          >
+            <div class="card-img overflow-hidden">
+              <img
+                src="img/choco1.png"
+                alt="choco 1"
+                class="img-fluid rounded shadow-lg"
+              />
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 pb-4 d-flex justify-content-center"
+          >
+            <div class="card-img overflow-hidden">
+              <img
+                src="img/choco1.png"
+                alt="choco 1"
                 class="img-fluid rounded shadow-lg"
               />
             </div>
@@ -283,6 +295,41 @@
         </div>
       </div>
     </section>
+
+    <!-- ---- Modal ---- -->
+    <div class="modal" id="enroll">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="text-danger">Chocolate Drip Var101</h4>
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-img d-flex justify-content-center">
+              <img src="img/choco1.png" alt="Choco 1" class="" />
+            </div>
+            <div>
+              <ul class="lead fs-6">
+                <li>Prices may vary according to sizes.</li>
+                <li>Prices may change without any prior notice.</li>
+                <li>
+                  Additional disclaimer: Actual food presentation may vary.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer bgred">
+            <a href="#" class="fs-5 text-white text-decoration-none"
+              >Message us<i class="bi bi-facebook ps-2"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ---- Footer---- -->
     <footer class="p-4 bgred position-relative">
