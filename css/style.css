@@ -1,38 +1,35 @@
 :root{  
     --red: #ff0000;
-    --white: #ffffff;
 }
 
 .bgred {
     background-color: var(--red);
 }
-.bgwhite {
-    background-color: var(--white);
-}
-.nav-item a {
-    color: white;
-    
-    font-weight:500;
-} 
+
+/* <!-- ---- Header ---- --> */
 @media(min-width: 992px) {
    #hero,
-   #selection {
+   #selection,
+   #about {
         padding-top: 106px;
     }
 }
 @media(max-width: 991px) {
     #hero,
-    #selection {
-
-     
+    #selection,
+    #about {     
          padding-top: 179px;
      }
  }
  @media(max-width: 396px) {
     #hero,
-    #selection {
+    #selection,
+    #about {
          padding-top: 243px;
      }
+ }
+ .nav-link:hover {
+   color: rgba(255,255,255,.5)!important;
  }
 
  /* <!-- ---- Featured Selection ---- --> */
@@ -108,3 +105,8 @@
  .modal-img img {
   height: 350px;
  }
+  /* ----- About section-----  */
+  .hisstory {
+   top: 40px;
+  right: 50px;
+  }
